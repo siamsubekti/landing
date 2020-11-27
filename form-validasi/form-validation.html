@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="form-validation.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/timepicker.js/latest/timepicker.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <form id="form-submit" class="form-submit">
+            <div class="text-center">
+                <h1>Form Validation</h1>
+            </div>
+            <div class="input-content">
+                <input type="text" class="form-control" name="customer" id="customer" placeholder="Nama Pelanggan"
+                     aria-label="customer" aria-describedby="basic-addon1"
+                     required>
+                <p id="errorcust" class="text-danger"></p>
+            </div>
+            <div class="input-content">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email"
+                     aria-label="email" aria-describedby="basic-addon1"
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                <p id="errorem" class="text-danger"></p>
+            </div>
+            <div class="input-content">
+                <input type="time" name="starttime" id="starttime" placeholder="Jam Keberangkatan "
+                     aria-label="starttime" aria-describedby="basic-addon1">
+                <p id="form-error" class="text-danger"></p>
+            </div>
+            <div class="input-content">
+                <input type="text" class="form-control" name="endtime" id="endtime" placeholder="Tujuan Keberangkatan"
+                     aria-label="endtime" aria-describedby="basic-addon1">
+                <p id="form-error" class="text-danger"></p>
+            </div>
+            <div class="input-content">
+                <input type="text" class="form-control" name="tiket" id="tiket" placeholder="Jumlah Tiket"
+                     aria-label="tiket" aria-describedby="basic-addon1">
+                <p id="form-error" class="text-danger"></p>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block" id="btn-submit">
+                Submit
+            </button>
+        </form>
+        
+        <script>
+            function InvalidMsg(textbox) { 
+  
+                if (textbox.value === '') { 
+                    textbox.setCustomValidity 
+                            ('Entering an email-id is necessary!'); 
+                } else if (textbox.validity.typeMismatch) { 
+                    textbox.setCustomValidity 
+                            ('Please enter an email address which is valid!'); 
+                } else { 
+                    textbox.setCustomValidity(''); 
+                } 
+
+                return true; 
+            }
+        </script>
+        <script src="form-validation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(100, 237, 230);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+h2 {
+    color: aqua;
+}
+.login {
+    padding: 1em;
+    margin: 2em auto;
+    width: 17em;
+    background: #fff;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 10pt;
+    color:#555;
+}
+
+input[type="text"],
+input[type="text and number"],
+input[type="user"],
+input[type="password"]
+{
+    padding: 8px;
+    width: 95%;
+    background: #efefef;
+    border: 0;
+    font-size: 10pt;
+    margin: 6px 0px;
+}
+.tombol {
+    background: #3498db;
+    color: #fff;
+    border: 0;
+    padding: 5px 8px;
+}

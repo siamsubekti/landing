@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+p {
+    padding-left: 10px;
+    font-size: 12px;
+}

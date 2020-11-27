@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="kurs-mata-uang.css" type="text/css" media="all">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+       <div class="container-conv">
+           <table class="table table-striped">
+               <thead>
+                   <tr id="table-row1-custom">
+                       <th>Masukan Nilai</th>
+                       <th>Valas</th>
+                       <th>Rentang</th>
+                       <th id="idr">IDR</th>
+                       <th>Nilai Rupiah</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr id="table-row-custom">
+                       <td>
+                           <input type="number" class="form-control" id="from_amount">
+                       </td>
+                       <td>
+                        <select id="from_currency" class="custom-select">
+                            <option value="EUR">Euro</option>
+                            <option value="JPY">Yen Jepan</option>
+                            <option value="MYR">Ringgit Malaysian</option>
+                            <option value="SAR">Saudi Riyal</option>
+                            <option value="SGD">Dollar Singapore</option>
+                            <option value="USD" selected>Dollar US</option>
+                            </select>
+                       </td>
+                       <td>
+                           <div class="rate" id="rate"></div>
+                       </td>
+                       <td id="idr">
+                           <select id="to_currency" aria-readonly="true">
+                               <option value="IDR">IDR</option>
+                           </select>
+                       </td>
+                       <td>
+                           <input type="text" id="to_amount" placeholder="Value In IDR" readonly>
+                       </td>
+                   </tr>
+                   <script src="kurs-mata-uang.js"></script>
+               </tbody>
+           </table>
+       </div> 
+    </body>
+</html>

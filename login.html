@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login authentication javascript - arofahwindasaputri-0110120011-SI05</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+            <div class="login">
+                <h2>WWW.AROFAHWS.COM</h2>  
+            </div>
+            <form action="#" method="POST" onsubmit="validasi()">
+                <div>
+                    <label>User Name:</label>
+                    <input type="text" name="user" id="user" />
+                </div>
+                <div>
+                    <label>Password :</label>
+                    <input type="text and number" nama="password" id="Password" />
+                </div>
+                
+                <div>
+                    <input type="submit" value="login" class="tombol">
+                </div>
+            </form>
+    </body>
+    <script type="text/javascript">
+        function validasi() {
+            var user = document.getElementById("user").value;
+            var password = document.getElementById("password").value;
+            if (user !="" && password !="") {
+                    return true;
+            }else{
+                alert('anda harus mengisi data dengan lengkap !');
+            }
+        }
+        </script>
+</html>

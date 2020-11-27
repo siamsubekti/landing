@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5!important;
+}
+
+#idr {
+    display: none;
+}
+#table-row-custom {
+    background-color: rgba(255, 0, 207, 0.25);
+}
+#table-row1-custom{
+    text-align: center;
+    background-color: white;
+}
+#rate{
+    padding-top: 6px;
+}
